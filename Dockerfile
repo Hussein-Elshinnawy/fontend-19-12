@@ -7,5 +7,5 @@ RUN npm install
 RUN npm run build --prod
 
 FROM nginxinc/nginx-unprivileged
-COPY --from=builder /usr/src/app/dist/fontend-19-12 /usr/share/nginx/html
+COPY --from=builder /usr/src/app/dist/app1 /usr/share/nginx/html
 COPY ./nginx.conf /etc/nginx/conf.d/default.conf
