@@ -11,7 +11,7 @@ export class AuthService {
 
   signup(formData:object):Observable<any>
   {
-    return this._HttpClient.post('http://localhost:8080/admin/signup',formData)
+    return this._HttpClient.post('https://conback-git-milcu18076-dev.apps.sandbox-m2.ll9k.p1.openshiftapps.com/admin/signup',formData)
 
   }
 }
